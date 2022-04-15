@@ -1,0 +1,515 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  animation: animate 12s ease-in-out infinite;
+  animation-duration: 12s;
+}
+@keyframes animate {
+  0% {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/Famous-Temples-in-Delhi-Feature.jpg);
+  }
+  20% {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/lotus2.jpg);
+  }
+  40% {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/india2.jpg);
+  }
+  60% {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/humayun2.jpg);
+  }
+  80% {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/red2.jpg);
+  }
+  100% {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/qutub2.jpg);
+  }
+}
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+nav .header {
+  width: 25%;
+  text-align: center;
+}
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav .menu a:first-child {
+  color: #4b2f83;
+}
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+section p {
+  font-size: 23px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+section .btnone {
+  background: #fff;
+  color: #000;
+}
+.btnone:hover {
+  background: #4b2f83;
+  color: #fff;
+}
+section .btntwo {
+  background: #4b2f83;
+  color: #fff;
+}
+.btntwo:hover {
+  background: #fff;
+  color: #000;
+}
+.change_content:after {
+  content: "";
+  animation: changetext 12s infinite linear;
+  color: #4b2f83;
+  font-size: 4rem;
+}
+@keyframes changetext {
+  0% {
+    content: " Akshardham";
+  }
+  20% {
+    content: " Lotus Temple";
+  }
+  40% {
+    content: " India Gate";
+  }
+  60% {
+    content: " humayun tomb";
+  }
+  80% {
+    content: " red fort";
+  }
+  100% {
+    content: " Qutub Minar";
+  }
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+.campus p {
+  text-shadow: none;
+  font-size: 20px;
+  color: #777;
+}
+.campus h1 {
+  text-shadow: none;
+  font-size: 35px;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background: #4b2f83;
+}
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+.rowa {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+.rowt {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.campus-colt {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus-colt img {
+  width: 100%;
+  display: block;
+}
+/*---------------Facilities----------*/
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  text-shadow: none;
+}
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.facilities-col p {
+  padding: 0;
+}
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 25px;
+  text-shadow: none;
+  font-weight: bold;
+  letter-spacing: 0ch;
+}
+.facilities p {
+  text-shadow: none;
+  font-size: 20px;
+  color: #777;
+}
+.facilities h1 {
+  text-shadow: none;
+  font-size: 35px;
+}
+/*-----------------testimonials-----------*/
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.testimonials h1 {
+  text-shadow: none;
+  font-size: 35px;
+  font-weight: bold;
+}
+.testimonials p {
+  text-shadow: none;
+  font-size: 20px;
+  color: #777;
+}
+.testimonial-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #e6e6fa;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.testimonial-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.testimonial-col p {
+  padding: 0;
+}
+.testimonial-col h3 {
+  margin-top: 15px;
+  text-align: left;
+  text-shadow: none;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0ch;
+}
+.testimonial-col .fa {
+  color: #4b2f83;
+}
+.fa-heart-o {
+  color: #fff;
+}
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/cab.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.cta h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+  text-shadow: none;
+  font-size: 30px;
+  color: #fff;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 1px solid #4b2f83;
+  background: #4b2f83;
+  transition: 1s;
+}
+/*-------------footer---------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+  text-shadow: none;
+  font-size: 20px;
+}
+.footer p {
+  text-shadow: none;
+  color: #777;
+  font-size: 20px;
+}
+.icons .fa {
+  color: #4b2f83;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px;
+}
+.fa-heart-o {
+  color: #4b2f83;
+}
+.fa-hand-o-down {
+  color: #4b2f83;
+}
+.fa-hand-o-up {
+  color: #4b2f83;
+}
+/* our team */
+.team {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  text-shadow: none;
+}
+.team p {
+  text-shadow: none;
+  font-size: 20px;
+  color: #777;
+}
+.team h1 {
+  text-shadow: none;
+  font-size: 35px;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.team .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.team .container .card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  background: #e6e6fa;
+  margin: 20px;
+  box-shadow: none;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.team .container .card .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.team .container .card:hover .content {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+.team .container .card .content .imgbx {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+}
+.team .container .card .content .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team .container .card .content .contentbox h3 {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+.team .container .card .sci {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+}
+.team .container .card .sci li {
+  list-style: none;
+  margin: 0 -15px;
+
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.1s * var(--i));
+  color: #4b2f83;
+}
+.team .container .card:hover .sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.team .container .card .sci li a {
+  color: #4b2f83;
+  font-size: 20px;
+}
+.ack {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  text-shadow: none;
+}
+.ack h1 {
+  text-shadow: none;
+  font-size: 35px;
+}
+.ack p {
+  text-shadow: none;
+  font-size: 20px;
+  color: #777;
+}

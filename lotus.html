@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Lotus Temple</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Josefin Sans", sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+            url(https://i.pinimg.com/564x/c5/09/c4/c509c419777117c435b6791438d8db7d.jpg);
+            background-position: center;
+            background-size: cover;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+        }
+        .navbar{
+            height: 12%;
+            display: flex;
+            align-items: center;
+        }
+        /* .lotuslogo{
+            width: 100px;
+            cursor: pointer;
+        } */
+        nav{
+            flex: 1;
+            text-align: right;
+        }
+        nav ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .row{
+            display: flex;
+            height: 88%;
+            align-items: center;
+        }
+        .col{
+            flex-basis: 50%;
+        }
+        h1{
+            color: #fff;
+            font-size: 100px;
+        }
+        p{
+            color: #fff;
+            font-size: 14px;
+            line-height: 15px;
+        }
+        .button{
+            padding: 12px 30px;
+            border-radius: 4px;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.5s ease;
+            background: #4b2f83;
+            color: #fff;
+        }
+        .button:hover{
+            background: #fff;
+            color: #000;
+        }
+        .card{
+            width: 240px;
+            height:300px;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 10px 15px; 
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.5s;
+        }
+        .card1{
+            background-image: url(images/lotuscard1.jpg);
+        }
+        .card2{
+            background-image: url(images/lotuscard2.jpg);
+        }
+        .card3{
+            background-image: url(images/lotuscard3.jpg);
+        }
+        .card4{
+            background-image: url(images/lotuscard4.jpg);
+        }
+        .card:hover{
+            transform: translateY(-10px);
+        }
+        h5{
+            color: #fff;
+            text-shadow: 0 0 5px #999;
+            font-size: 18px;
+        }
+        .card p{
+            text-shadow: 0 0 5px #000;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <!-- <img src="images/lotuslogo-removebg-preview.png" class="lotuslogo"> -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Lotus Temple</h1>
+                <p>The Lotus Temple, located in Delhi, India, is a Baháʼí House of Worship that was dedicated in December 1986. Notable for its flowerlike shape, it has become a prominent attraction in the city. Like all Houses of Worship, the Lotus Temple is open to all, regardless of religion or any other qualification. According to Shoghi Effendi, a Bahá'í temple is a “silent teacher” of the Bahá'í faith</p>
+                <br>
+                <br>
+                <a href="https://delhitourism.gov.in/delhitourism/tourist_place/bahai_temple.jsp" class="button">Explore</a>
+            </div>
+            <div class="col">
+                <div class="card card1">
+                    <h5>Bahai House</h5>
+                    <p>*******************************</p>
+                </div>
+                <div class="card card2">
+                    <h5>27 Marble Petals</h5>
+                    <p>******************************************</p>
+                </div>
+                <div class="card card3">
+                    <h5>9 sides 9 entrances</h5>
+                    <p>*********************************************</p>
+                </div>
+                <div class="card card4">
+                    <h5>Eye catching view</h5>
+                    <p>*******************************************</p>
+                </div>
+            </div>
+        </div> 
+        </div>
+        
+</body>
+</html>
